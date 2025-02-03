@@ -5,26 +5,29 @@ Repository for the Web pages for the upcoming Smart Agents Workshop, e.g., the C
 * Thanks to the advancement of HTML5 and related Web technologies, Web applications with speech capability is getting more and more popular for ease of user-interaction and richer user experience such as Apple's SIRI, Google's Voice Assistant and Amazon's Alexa.
 * Thus voice agents are one of the essential applications on various devices especially mobile phones, tablet devices, eBook readers, and gaming platforms. In addition, traditional platforms such as TV's, audio systems and automobiles are rapidly becoming capable of speech interaction.
 * Also these days smart speakers are getting a portal for IoT services including smart homes.
-* On the other hand, during [one of the breakout sessions at TPAC 2019 in Fukuoka](https://www.w3.org/2019/09/18-voice-minutes.html), there was discussion about potential needs for improved voice agents for web services.
-+ This resulted in creation of [Issue 221 Proposal: Workshop on User-friendly Smart Agents on the Web - Voice interaction and what's next?](https://github.com/w3c/strategy/issues/221)
+* Dduring [one of the breakout sessions at TPAC 2019 in Fukuoka](https://www.w3.org/2019/09/18-voice-minutes.html), there was discussion about potential needs for improved voice agents for web services.
+* This resulted in creation of [Issue 221 Proposal: Workshop on User-friendly Smart Agents on the Web - Voice interaction and what's next?](https://github.com/w3c/strategy/issues/221)
  
 ## Focus
 * See the current status of the voice-enabled smart platforms integrating multi-vendor services/applications/devices:
-    * Interaction with smart devices
+    * Interaction with smart devices also in the Web of Things
     * Control from Web browsers
     * Interoperability and access to controls for accessibility/usability, e.g., smart navigation
-* And discuss what is missing for the voice interaction technology to be deployed globally for all the languages throughout the world
+    * Smart Cities
+* and discuss what is missing for the voice interaction technology to be deployed globally for all the languages throughout the world
+
  
 ## Possible topics
+* Clarification of use cases and their requirements
 * Summary of the current status:   
     * What we already have in the browsers
     * Common issues on the interoperability among the browsers/platforms
     * Missing features with the existing APIs
 * Needs of the users and the developers:
-    * Smarter interaction for easier use, e.g.: 
-        * Short and clear commands using mixed input including voice and the other modalities (and possible mechanism to define the command sets)
-        * Smarter dialog model between human and the system
-        * Adjusting the system behavior based on the user's responses
+    * Smarter interaction with LLMs for easier use, e.g.: 
+        * Hallucinations: LLMs can sometimes generate outputs that sound plausible but are factually incorrect.
+        * Ambiguity in Outputs: Inconsistent or vague responses can lead to confusion in automated workflows.
+        * Lack of Accountability: When errors occur, tracing the root cause in an LLM’s predictions can be difficult.
     * Improved pronunciation for speech synthesis in various languages. See also the [APA WG's video for TPAC 2020](https://www.w3.org/2020/10/TPAC/apa-pronunciation.html).
     * Applying the advanced voice technology for Web services (Speech style, Expression, Feeling, Emotion, etc.)
     * Dealing with both the input entities (sensors/applications) and output entities (actuators/devices/digital twins) from various vendors and coordination thereof
@@ -35,7 +38,7 @@ Repository for the Web pages for the upcoming Smart Agents Workshop, e.g., the C
     * Applications/services/devices from different multiple vendors
     * Unified data format and protocols for data transfer
     * State transition management model and service lifecycle
-    * Natural language processing technology and resources for that, e.g., phonetic databases, parallel corpola
+    * Natural language processing technology and resources for that, e.g., phonetic databases, parallel corpora
     * Possible improved model and architecture for voice interaction and expected technologies (also the relationship between those technologies and the Web technology)
 * Horizontal platform:
     * Discovery of resources
@@ -44,7 +47,7 @@ Repository for the Web pages for the upcoming Smart Agents Workshop, e.g., the C
     * Internationalization and compatibility with region-specific technology
  
 ## Example of related use cases
-Related technology area is broad including:
+The related technology area is broad including:
  
 * Voice agent
 * Connected car
