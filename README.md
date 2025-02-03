@@ -20,7 +20,8 @@ Repository for the Web pages for the upcoming Smart Agents Workshop, e.g., the C
 ## Possible topics
 * Clarification of use cases and their requirements
 * Summary of the current status:   
-    * What we already have in the browsers
+    * Overview of existing browser support/platforms
+    * What we already have in the browsers/platforms
     * Common issues on the interoperability among the browsers/platforms
     * Missing features with the existing APIs
 * Needs of the users and the developers:
