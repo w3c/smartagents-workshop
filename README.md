@@ -13,7 +13,6 @@ Repository for the Web pages for the upcoming Smart Agents Workshop, e.g., the C
     * Interaction with smart devices also in the Web of Things
     * Control from Web browsers
     * Interoperability and access to controls for accessibility/usability, e.g., smart navigation
-    * Smart Cities
 * and discuss what is missing for the voice interaction technology to be deployed globally for all the languages throughout the world
 
  
@@ -35,7 +34,7 @@ Repository for the Web pages for the upcoming Smart Agents Workshop, e.g., the C
     * Presentation issues such as how/what/when to transfer necessary information from the input entities (possibly the users, devices or applications) and present it to the output entities (also possibly the users, devices or applications)
     * Integration of multiple interchangeable modalities (typing, handwriting, voice, etc.)
 * Underlying technologies:
-    * Smarter dialog management model for integrating multiple applications
+    * Smarter integration of multiple applications, e.g. via Agentic AI
     * Applications/services/devices from different multiple vendors
     * Unified data format and protocols for data transfer
     * State transition management model and service lifecycle
