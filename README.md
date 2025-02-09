@@ -22,7 +22,7 @@ Repository for the Web pages for the upcoming Smart Agents Workshop, e.g., the C
     * Overview of existing browser support and platforms
     * Integration of LLMs to enhance browser capabilities and platforms
     * Common interoperability issues among browsers and platforms
-    * Missing features in existing APIs
+    * APIs in the presence of LLMs
 * Needs of the users and developers:
     * Enhanced interaction with LLMs for improved usability, addressing issues such as:
         * Hallucinations: LLMs may generate outputs that seem plausible but are factually incorrect.
