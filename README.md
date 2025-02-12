@@ -13,15 +13,16 @@ Repository for the Web pages for the upcoming Smart Agents Workshop, e.g., the C
 * See the current status of the voice-enabled smart platforms integrating multi-vendor services/applications/devices:
     * Interaction with smart devices also in the Web of Things
     * Control from Web browsers
-    * Interoperability and access to controls for accessibility/usability, e.g., smart navigation
-* Discuss the gaps in voice interaction technology for global deployment across all languages, including the integration of large language models (LLMs) to enhance natural language understanding and generation.
+    * Interoperability and access to controls for accessibility/usability, e.g., smart cities
+* Discuss the current situation in voice interaction technology for global deployment across all languages, including the integration of large language models (LLMs) to enhance natural language understanding and generation.
+* As a result we would see the pain points and technological gaps
 
 ## Possible topics
-* Clarification of use cases and their requirements
+* Clarification of use cases of smart agents and their requirements
 * Summary of the current status:
-    * Overview of existing browser support and platforms
+    * Overview of existing browser support and platforms, for example smart speakers and mobile phones
     * Integration of LLMs to enhance browser capabilities and platforms
-    * Common interoperability issues among browsers and platforms
+    * Common interoperability issues for smart agents among browsers and platforms
     * APIs in the presence of LLMs
 * Needs of the users and developers:
     * Enhanced interaction with LLMs for improved usability, addressing issues such as:
