@@ -33,7 +33,7 @@ Repository for the Web pages for the upcoming Smart Agents Workshop, e.g., the C
     * Managing input entities (sensors/applications) and output entities (actuators/devices/digital twins) from various vendors and their coordination.
     * Addressing presentation issues such as how, what, and when to transfer necessary information from input entities (users, devices, or applications) to output entities (users, devices, or applications).
     * Integrating multiple interchangeable modalities (typing, handwriting, voice, etc.).
-* Underlying technologies:
+* Underlying technologies of smart agents:
     * Advanced integration of multiple applications, e.g., via Agentic AI
     * Applications, services, and devices from various vendors
     * Standardized data formats and protocols for data transfer
