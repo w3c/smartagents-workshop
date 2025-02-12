@@ -24,21 +24,22 @@ Repository for the Web pages for the upcoming Smart Agents Workshop, e.g., the C
     * Integration of LLMs to enhance browser capabilities and platforms
     * Common interoperability issues for smart agents among browsers and platforms
     * APIs in the presence of LLMs
-* Needs of the users and developers:
+* Needs of the users and developers of smart agents:
     * Enhanced interaction with LLMs for improved usability, addressing issues such as:
         * Hallucinations: LLMs may generate outputs that seem plausible but are factually incorrect.
         * Ambiguity in outputs: Inconsistent or vague responses can cause confusion in automated workflows.
         * Lack of accountability: Identifying the root cause of errors in an LLM’s predictions can be challenging.
-* Utilizing advanced voice technology for Web services, including speech style, expression, feeling, and emotion.
-* Managing input entities (sensors/applications) and output entities (actuators/devices/digital twins) from various vendors and their coordination.
-* Addressing presentation issues such as how, what, and when to transfer necessary information from input entities (users, devices, or applications) to output entities (users, devices, or applications).
-* Integrating multiple interchangeable modalities (typing, handwriting, voice, etc.).
+
+    * Managing input entities (sensors/applications) and output entities (actuators/devices/digital twins) from various vendors and their coordination.
+    * Addressing presentation issues such as how, what, and when to transfer necessary information from input entities (users, devices, or applications) to output entities (users, devices, or applications).
+    * Integrating multiple interchangeable modalities (typing, handwriting, voice, etc.).
 * Underlying technologies:
     * Advanced integration of multiple applications, e.g., via Agentic AI
     * Applications, services, and devices from various vendors
     * Standardized data formats and protocols for data transfer
     * State transition management models and service lifecycles
     * Enhanced models and architectures for voice interaction and their relationship with Web technologies
+* Utilizing advanced voice technology for Web services, including speech style, expression, feeling, and emotion.
 * Horizontal platform considerations:
     * Discovery of resources
     * Privacy and security
