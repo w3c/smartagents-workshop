@@ -27,7 +27,7 @@ The following list of possible topics is quite broad as a starting point and wil
     * Common interoperability issues for smart agents among browsers and platforms
     * APIs in the presence of LLMs
 * Needs of the users and developers of smart agents:
-    * User interfaces to smart agents
+    * User interfaces to smart agents, including accessibility issues raised by smart agent technology
     * Enhanced interaction with LLMs in the context of smart agents for improved usability, addressing issues such as:
         * Hallucinations: LLMs may generate outputs that seem plausible but are factually incorrect.
         * Ambiguity in outputs: Inconsistent or vague responses can cause confusion in automated workflows.
