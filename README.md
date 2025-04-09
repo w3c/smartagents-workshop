@@ -73,11 +73,6 @@ A useful user requirement may be the ability to request congruent user feedback 
     * Users and developers from various countries/communities
     * Standard organizations
     * Researchers from academia and industry
-* Liaisons
-    * CHIP (Amazon, Apple, Google, and Zigbee)
-    * OCF
-    * oneM2M
-    * Singapore Govtech
 
 <!--
 See also the [rendered HTML](https://w3c.github.io/smartagents-workshop/)
