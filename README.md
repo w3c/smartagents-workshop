@@ -1,5 +1,5 @@
 
-# smartagents-workshop
+# Smart Voice Agents Workshop
 Repository for the Web pages for the upcoming Smart Voice Agents Workshop, e.g., the Call-for-Participation
 
 ## General background
@@ -11,7 +11,7 @@ Repository for the Web pages for the upcoming Smart Voice Agents Workshop, e.g.,
 
 ## Focus
 * See the current status of the voice-enabled smart platforms integrating multi-vendor services/applications/devices:
-    * Interaction with smart devices also in the Web of Things
+    * Voice interaction with smart devices also in the Web of Things
     * Control from Web browsers
     * Interoperability and access to controls for accessibility/usability, e.g., smart cities
 * Discuss the current situation in voice interaction technology for global deployment across all languages, including the integration of large language models (LLMs) to enhance natural language understanding and generation.
@@ -23,12 +23,12 @@ The following list of possible topics is quite broad as a starting point and wil
 * Clarification of use cases of smart voice agents and their requirements
 * Summary of the current status:
     * Overview of existing browser support and platforms, for example smart speakers and mobile phones
-    * Integration of LLMs to enhance browser capabilities and platforms
+    * Integration of LLMs for voice interaction to enhance browser capabilities and platforms
     * Common interoperability issues for smart voice agents among browsers and platforms
     * APIs in the presence of LLMs
 * Needs of the users and developers of smart voice agents:
     * User interfaces to smart voice agents, including accessibility issues raised by smart voice agent technology
-    * Enhanced interaction with LLMs in the context of smart voice agents for improved usability, addressing issues such as:
+    * Enhanced voice interaction with LLMs in the context of smart voice agents for improved usability, addressing issues such as:
         * Hallucinations: LLMs may generate outputs that seem plausible but are factually incorrect.
         * Ambiguity in outputs: Inconsistent or vague responses can cause confusion in automated workflows.
         * Lack of accountability: Identifying the root cause of errors in an LLM’s predictions can be challenging.
@@ -36,8 +36,8 @@ The following list of possible topics is quite broad as a starting point and wil
     * Addressing presentation issues such as how, what, and when to transfer necessary information from input entities (users, devices, or applications) to output entities (users, devices, or applications).
     * Integrating multiple interchangeable modalities (typing, handwriting, voice, etc.).
 * Underlying technologies of smart voice agents:
-    * Advanced integration and orchestration of multiple agents, e.g., in support of Agentic AI
-    * Agents, services, and devices from various vendors
+    * Advanced integration and orchestration of multiple voice agents, e.g., in support of Agentic AI
+    * Voice agents, services, and devices from various vendors
     * Standardized data formats and protocols for data and control transfer
     * State transition management models and service lifecycles
     * Enhanced models and architectures for smart voice agent interaction and their relationship with Web technologies
@@ -52,7 +52,7 @@ The following list of possible topics is quite broad as a starting point and wil
 The related technology area is broad, including:
 
 * Voice agents and chatbots
-* Connected cars
+* Voice agents in connected cars
 * Smart homes, smart factories, and smart cities
 * Smart speakers and smartphones as portals/user devices
 
