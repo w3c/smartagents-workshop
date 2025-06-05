@@ -3,14 +3,14 @@
 Repository for the Web pages for the upcoming Smart Voice Agents Workshop, e.g., the Call-for-Participation
 
 ## General background
-* Thanks to the advancement of HTML5 and related Web technologies, Web applications with speech capability are getting more and more popular for ease of user interaction and richer user experience, such as Apple's SIRI, Google's Voice Assistant, and Amazon's Alexa.
+* Even simpler applications with speech capability are getting more and more popular for ease of user interaction and richer user experience. Some of them are already available in our homes.
 * Voice agents are one of the essential applications on various devices, especially mobile phones, tablet devices, eBook readers, and gaming platforms. Moreover, the integration of speech capabilities into traditional platforms such as TVs, audio systems, and automobiles was a recent major technical advancement.
 * The role of smart speakers as a portal for IoT services, including smart homes, tends to be overshadowed by the broader capabilities of LLMs.
 * During [one of the breakout sessions at TPAC 2019 in Fukuoka](https://www.w3.org/2019/09/18-voice-minutes.html), there was a discussion about potential needs for improved voice agents for web services.
 * This resulted in the creation of [Issue 221 Proposal: Workshop on User-friendly Smart Voice Agents on the Web - Voice interaction and what's next?](https://github.com/w3c/strategy/issues/221)
 
 ## Focus
-* See the current status of the voice-enabled smart platforms integrating multi-vendor services/applications/devices:
+* Firstly, see the current status of the voice-enabled smart platforms integrating multi-vendor services/applications/devices:
     * Voice interaction with smart devices also in the Web of Things
     * Control from Web browsers
     * Interoperability and access to controls for accessibility/usability, e.g., smart cities
@@ -51,9 +51,7 @@ The following list of possible topics is quite broad as a starting point and wil
 ## Examples of related use cases
 The related technology area is broad, including:
 
-* Voice agents and chatbots
-* Voice agents in connected cars
-* Smart homes, smart factories, and smart cities
+* Voice agents and chatbots in various environments like smart homes, smart factories, smart cars and smart cities
 * Smart speakers and smartphones as portals/user devices
 
 For example, Hybrid TV services (Web+TV integration based on HTML5, Second Screen, TTML, etc.) and smart home devices and services, possibly incorporating proprietary technology like MiniApps, can offer the following use cases:
