@@ -10,11 +10,33 @@
 </head>
 
 <body>
-<div id="banner-image">
-  <h1>W3C Workshop on<br>Smart Voice Agents</h1>
-  <h2>February 2026, virtual event</h2>
-</div>
-<br>
+    <header class="header">
+      <div id="banner">
+        <div>
+          <p>
+            <a href="https://www.w3.org/"><img alt="W3C" src=
+            "https://www.w3.org/Icons/w3c_home" height="48" width="72"></a>
+          </p>
+          <div id="banner-image">
+              <h1>W3C Workshop on<br>Smart Voice Agents</h1>
+              <h2>February 2026, Virtual on Zoom</h2>
+        </div>
+          <p>A virtual event with pre-recorded talks and interactive sessions, February 2026</p>
+        </div>
+      </div>
+      <nav class="menu" id="menu">
+        <ul>
+          <li><a class="active-tab">Call for Participation</a></li>
+          <li><a href="speakers.html">Apply as a speaker</a></li>
+          <!--li><a href="sponsor.html">Sponsorship</a></li-->
+          <!--li><a href="agenda.html">Agenda</a></li-->
+          <!--li><a href="talks.html">Talks</a></li-->
+          <!--li><a href="attendees.html">Attendees</a></li-->
+          <!--li><a href="https://www.w3.org/2021/06/25-smart-cities-minutes.html">Minutes</a></li-->
+          <!--li><a href="report.html">Report</a></li-->
+        </ul>
+      </nav>
+    </header>
     <aside class="box" id="important">
       <h2 class="footnote">
         Virtual event!
@@ -30,7 +52,7 @@
       </h2>
       <dl>
         <dt>16 October 2025</dt>
-        <dd><a href="index.html">Call-for-Participation page</a> published and <!-- a href="https://www.w3.org/2002/09/wbs/1/smartagents-ws-2025/@@@" -->Participant registration (TBD)<!-- /a --> starts.</dd>
+        <dd><a href="index.html">Call-for-Participation page</a> published and <!-- a href="https://www.w3.org/2002/09/wbs/1/smartagents-ws-2025/@@@" -->Participant registration<!-- /a --> starts.</dd>
 
         <dt>27 November 2025 <!--(<span class="updates">deadline extended!</span>)--></dt>
         <dd>Deadline for <a href="speakers.html#submit-form">submitting a proposal</a> for a talk during the workshop</dd>
@@ -42,13 +64,35 @@
         <dd>Deadline for selected speakers to provide their presentation slides and recorded talks</dd>
         <dd>Publish the basic agenda for the workshop</dd>
 
-        <dt>@@ February 2026</dt>
+        <dt>19 February 2026</dt>
         <dd>Public release of all accepted talks</dd>
-        <dd>Deadline to <!--a href="https://www.w3.org/2002/09/wbs/1/smartcities-ws-2021/"-->register as workshop participant<!--/a--></dd>
+        <dd>Deadline to <a href="#submit-form">register as workshop participant</a></dd>
 
         <dt>26 February 2026</dt>
         <dd>Workshop (virtual)</dd>
       </dl>
+    </aside>
+
+    <aside class="box" id="submit-form">
+      <h2 class="footnote">
+        Registration
+      </h2>
+      <label for="participant-name">Your name:</label>
+      <input id="participant-name" placeholder="Your name" maxlength="64">
+      <br/>
+
+      <label for="participant-bio">Your bio:</label>
+      <input id="participant-bio" placeholder="Your related experience or expertise" maxlength="64">
+      <br/>
+
+      <label for="participant-statement">Statement of interest:</label>
+      <input id="participant-statement" placeholder="Your statement of interest" maxlength="64">
+      <br/>
+      <br/>
+
+      <button id="submit-button-participant">Submit</button>
+      <br/>
+      <small>(Submit opens a prepopulated mail compose window. You may customize your registration at this point before sending it.)</small>
     </aside>
 
 <main id="main" class="main">
@@ -174,6 +218,7 @@ A useful user requirement may be the ability to request congruent user feedback 
   <li>Kimberly Patch, Invited Expert</li>
   <li>Janina Sajka, W3C Invited Expert</li>
   <li>Kaz Ashimura, W3C</li>
+  <li>Philippe Le H&#233;garet, W3C</li>
 </ul>
 </section>
 
@@ -182,14 +227,20 @@ A useful user requirement may be the ability to request congruent user feedback 
 <footer class="footer" id="footer">
     <p>
         W3C is proud to be an open and inclusive organization, focused on
-        productive discussions and actions. Our <a href="https://www.w3.org/policies/code-of-conduct/">Code of Conduct</a> ensures that all voices can be heard. Questions? Contact Kaz Ashimura &lt;<a href="mailto:ashimura@w3.org">ashimura@w3.org</a>&gt;.
+        productive discussions and actions. Our <a href=
+        "https://www.w3.org/Consortium/cepc/">Code of Ethics and Professional
+        Conduct</a> ensures that all voices can be heard. Questions? Contact Philippe Le H&#233;garet &lt;<a href=
+        "mailto:plh@w3.org">plh@w3.org</a>&gt;.
     </p>
     <p>
         Suggestions for improving this workshop page, such as fixing typos or
-        adding specific topics, can be made by opening a <a href="https://github.com/w3c/smartagents-workshop">pull request on GitHub</a>, or by
-        emailing Kaz Ashimura &lt;<a href="mailto:ashimura@w3.org">ashimura@w3.org</a>&gt;.
+        adding specific topics, can be made by opening a <a href=
+        "https://github.com/w3c/smartcities-workshop">pull request on GitHub</a>, or by
+        emailing Dirk Schnelle-Walka &lt;<a href=
+        "mailto:dirk@switch-consulting.de">dirk@switch-consulting.de</a>&gt;.
     </p>
 </footer>
-<script src="script.js"></script>
+	<script src="script.js"></script>
+    <script src="submit.js"></script>
 </body>
 </html>
