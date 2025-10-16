@@ -9,6 +9,7 @@
             const bio = document.querySelector('#speaker-bio').value;
             const title = document.querySelector('#talk-title').value;
             const abstract = document.querySelector('#talk-abstract').value;
+			const consent = document.querySelector('#talk-consent').value;
 
             const subject = `[workshop proposal] ${title}`;
             const body = `Hi Program Committee,` +
@@ -23,6 +24,8 @@
             `\n\n` +
             `Talk abstract: ${abstract}`+
             `\n\n` +
+			`Recording consent: ${consent}`+
+			`\n\n` +
             `Best regards,\n${name}`;
 
             window.location.href =
