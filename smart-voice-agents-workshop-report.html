@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>W3C Workshop on Smart Voice Agents - Report</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        
+        header {
+            border-bottom: 3px solid #005a9c;
+            margin-bottom: 2em;
+            padding-bottom: 1em;
+        }
+        
+        h1 {
+            color: #005a9c;
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        
+        h2 {
+            color: #005a9c;
+            font-size: 2em;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 0.3em;
+            margin-top: 1.5em;
+        }
+        
+        h3 {
+            color: #333;
+            font-size: 1.5em;
+            margin-top: 1.3em;
+        }
+        
+        h4 {
+            color: #333;
+            font-size: 1.2em;
+            margin-top: 1em;
+        }
+        
+        .workshop-info {
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 1em;
+        }
+        
+        .organizers {
+            background-color: #f5f5f5;
+            padding: 1em;
+            border-left: 4px solid #005a9c;
+            margin: 1.5em 0;
+        }
+        
+        .organizers h3 {
+            margin-top: 0;
+        }
+        
+        .toc {
+            background-color: #f9f9f9;
+            padding: 1.5em;
+            border: 1px solid #ddd;
+            margin: 2em 0;
+        }
+        
+        .toc h2 {
+            margin-top: 0;
+            border-bottom: none;
+        }
+        
+        .toc ul {
+            list-style-type: square;
+        }
+        
+        .toc > ul {
+            padding-left: 1em;
+        }
+        
+        .toc li {
+            margin: 0.5em 0;
+        }
+        
+        blockquote {
+            border-left: 4px solid #005a9c;
+            padding-left: 1em;
+            margin: 1.5em 0;
+            font-style: italic;
+            color: #555;
+            background-color: #f9f9f9;
+            padding: 1em;
+        }
+        
+        blockquote cite {
+            display: block;
+            margin-top: 0.5em;
+            font-size: 0.9em;
+            font-style: normal;
+        }
+        
+        .see-also {
+            background-color: #e8f4f8;
+            padding: 1em;
+            border-left: 4px solid #0066cc;
+            margin: 1em 0;
+        }
+        
+        .see-also h4 {
+            margin-top: 0;
+            color: #0066cc;
+        }
+        
+        .see-also ul {
+            margin-bottom: 0;
+        }
+        
+        .next-steps {
+            background-color: #f0f8f0;
+            padding: 1.5em;
+            border-left: 4px solid #4caf50;
+            margin: 2em 0;
+        }
+        
+        ul.action-items {
+            list-style-type: "■ ";
+            padding-left: 1.5em;
+        }
+        
+        ul.action-items li {
+            margin: 0.8em 0;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            margin: 1.5em 0;
+            border: 1px solid #ddd;
+        }
+        
+        figure {
+            margin: 2em 0;
+        }
+        
+        figcaption {
+            font-style: italic;
+            color: #666;
+            margin-top: 0.5em;
+            text-align: center;
+        }
+        
+        a {
+            color: #005a9c;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            border-top: 2px solid #ccc;
+            margin-top: 3em;
+            padding-top: 2em;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .additional-links {
+            background-color: #f5f5f5;
+            padding: 1.5em;
+            margin: 2em 0;
+        }
+        
+        .additional-links h2 {
+            margin-top: 0;
+        }
+        
+        .logo-container {
+            text-align: center;
+            margin: 2em 0;
+        }
+        
+        .logo-container img {
+            border: none;
+            margin: 0 1em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>W3C Workshop on Smart Voice Agents</h1>
+        <div class="workshop-info">
+            <p><strong>Date:</strong> 25-27 February 2026</p>
+            <p><strong>Location:</strong> Virtual on Zoom</p>
+            <p><strong>Sessions:</strong> Session 1 (25 Feb, 12:00 GMT-5), Session 2 (26 Feb, 10:00 GMT+1), Session 3 (27 Feb, 12:00 GMT-5)</p>
+        </div>
+    </header>
+
+    <div class="organizers">
+        <h3>Host</h3>
+        <p>This workshop was organized as a fully virtual W3C event with talks, online discussions, and interactive sessions.</p>
+        
+        <h3>Workshop Resources</h3>
+        <p>Recordings and slides of talks were made available after the workshop with speaker consent.</p>
+    </div>
+
+    <main>
+        <h2>Workshop Report</h2>
+
+        <div class="toc">
+            <h2>Table of Contents</h2>
+            <ul>
+                <li><a href="#executive-summary">Executive Summary</a></li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#session-highlights">Session Highlights</a></li>
+                <li><a href="#setting-context">Setting the Context</a></li>
+                <li><a href="#topics">Topics</a>
+                    <ul>
+                        <li><a href="#interoperability">Agent Interoperability</a></li>
+                        <li><a href="#protocols">Communication Protocols and Standards</a></li>
+                        <li><a href="#privacy-security">Privacy and Security</a></li>
+                        <li><a href="#user-control">User Control and Transparency</a></li>
+                        <li><a href="#multi-agent">Multi-Agent Conversations</a></li>
+                        <li><a href="#accessibility">Accessibility and Inclusivity</a></li>
+                        <li><a href="#voice-biometrics">Voice Biometrics and Authentication</a></li>
+                    </ul>
+                </li>
+                <li><a href="#issues-identified">Issues Identified</a>
+                    <ul>
+                        <li><a href="#issues-top8">Top 8 Cross-cutting Issues</a></li>
+                        <li><a href="#issues-day1">25 February (Session 1)</a></li>
+                        <li><a href="#issues-day2">26 February (Session 2)</a></li>
+                        <li><a href="#issues-day3">27 February (Breakout: Real-time)</a></li>
+                    </ul>
+                </li>
+                <li><a href="#next-steps">Next Steps</a>
+                    <ul>
+                        <li><a href="#what-to-watch">What to Watch (Technologies)</a></li>
+                        <li><a href="#technologies-progress">Relevant W3C Community Groups</a></li>
+                        <li><a href="#exploratory-work">Exploratory Work</a></li>
+                        <li><a href="#new-proposals">New Technical Proposals</a></li>
+                        <li><a href="#other-proposals">Other Proposals</a></li>
+                    </ul>
+                </li>
+                <li><a href="#thank-you">Thank You!</a></li>
+            </ul>
+        </div>
+
+        <div class="see-also">
+            <h4>See also:</h4>
+            <ul>
+                <li><a href="https://www.w3.org/2025/10/smartagents-workshop/index.html">Call for Participation</a></li>
+                <li><a href="https://www.w3.org/2025/10/smartagents-workshop/agenda.html">Agenda</a></li>
+                <li><a href="https://www.w3.org/2025/10/smartagents-workshop/speakers.html">Apply as a speaker</a></li>
+            </ul>
+        </div>
+
+        <section id="executive-summary">
+            <h2>Executive Summary</h2>
+            <p>W3C held a three-session virtual workshop on Smart Voice Agents on 25-27 February 2026, bringing together voice assistant developers, platform providers, standards experts, privacy advocates, and accessibility experts to advance interoperability, privacy, and user control in voice-enabled systems.</p>
+            
+            <p>Workshop participants acknowledged the growing ubiquity of voice agents across devices and platforms, and identified key challenges in achieving seamless, secure, and privacy-respecting interactions across different voice ecosystems. They highlighted the need for standardized protocols for agent-to-agent communication, mechanisms for user consent and delegation, and frameworks for ensuring transparency in multi-agent conversations.</p>
+            
+            <p>Key discussion areas included:</p>
+            <ul class="action-items">
+                <li>Agent discovery and invocation mechanisms that respect user privacy and choice</li>
+                <li>Protocols for delegating conversation control between agents (conversation handoff)</li>
+                <li>Privacy-preserving authentication and user identification across agents</li>
+                <li>Accessibility requirements for voice interfaces and multi-modal experiences</li>
+                <li>Technical standards for voice agent interoperability</li>
+            </ul>
+            
+            <p>On top of individual topics, one of the suggested next steps is to explore the possible creation of a voice agents activity at W3C to coordinate inputs from the voice community, pursue broader discussions on interoperability and privacy, and track progress on needs identified during the workshop.</p>
+
+            <p><strong>Editorial summary:</strong> Across all sessions and breakouts, participants repeatedly converged on eight cross-cutting issues that now define the practical standards agenda: pronunciation and language representation, hallucination reliability, real-time interaction quality, interoperability scope, privacy and delegation boundaries, multimodal synchronization, immersive accessibility integration, and cultural/persona adaptation. These priorities are consolidated in the <a href="#issues-top8">Top 8 Cross-cutting Issues</a> section and can serve as a roadmap for near-term Community Group and other W3C discussions.</p>
+        </section>
+
+        <section id="introduction">
+            <h2>Introduction</h2>
+            <p>W3C holds workshops to discuss a specific domain from various perspectives and identify needs that could warrant standardization efforts at W3C or elsewhere, and assess support and priorities among relevant communities. The Workshop on Smart Voice Agents was held as a virtual event on 25-27 February 2026. The main goal of the workshop was to bring together voice platform providers, agent developers, privacy experts, accessibility advocates, and standards professionals to advance interoperability and user empowerment in voice-enabled systems.</p>
+            
+            <p>The workshop convened a diverse group of participants representing different facets of voice technology. Discussions covered a wide range of topics, from high-level architectural questions about agent discovery and delegation to specific technical issues such as real-time interaction, multimodal grounding, accessibility, trust, and interoperability across platforms.</p>
+        </section>
+
+
+        <section id="sessions">
+            <h2>Sessions</h2>
+
+            <h3>Session 1</h3>
+            <h4>Focus</h4>
+            <p>Focused on trust, governance, and interoperability, including talks by Patricia Lee, Sarah Wood, Bhiksha Raj, Emmett Coin, and RJ Burnham.</p>
+            <h4>Highlights</h4>
+            <ul>
+                <li>Governance frameworks for standardization</li>
+                <li>Pronunciation consistency for web voice systems</li>
+                <li>ASR hallucination mitigation</li>
+                <li>Open Floor Protocol multi-agent collaboration</li>
+            </ul>
+
+            <h3>Session 2</h3>
+            <h4>Focus</h4>
+            <p>Focused on grounded interaction design and multimodal intelligence, with talks by Kristiina Jokinen, Zohar Gan, Fares Abawi, Ulrike Stiefelhagen, and Paola Di Maio.</p>
+            <h4>Highlights</h4>
+            <ul>
+                <li>Context-grounded trustworthy voice agents</li>
+                <li>Accessibility for immersive/3D content</li>
+                <li>Gaze-aware dialog</li>
+                <li>Configurable standards for naturally responsive voice interaction</li>
+            </ul>
+
+            <h3>Session 3</h3>
+            <h4>Focus</h4>
+            <p>Focused on deployment realism and user trust, with talks by Casey Kennington, Frankie James, Raj Tumuluri, and Bryan Vuong.</p>
+            <h4>Highlights</h4>
+            <ul>
+                <li>Real-time incremental processing</li>
+                <li>In-vehicle voice interaction</li>
+                <li>Multimodal trust and empathy design</li>
+                <li>Embeddable voice agents for web accessibility</li>
+            </ul>
+        </section>
+
+        <section id="setting-context">
+            <h2>Setting the Context</h2>
+            
+            <div class="see-also">
+                <h4>See also:</h4>
+                <ul>
+                    <li><a href="https://www.w3.org/2025/10/smartagents-workshop/agenda.html">Agenda and presentations</a></li>
+                    <li><a href="https://www.w3.org/2025/10/smartagents-workshop/index.html">Workshop overview and participation info</a></li>
+                </ul>
+            </div>
+            
+            <p>The workshop was organized as three half-day sessions: Session 1 (25 Feb, 12:00 GMT-5), Session 2 (26 Feb, 10:00 GMT+1), and Session 3 (27 Feb, 12:00 GMT-5). Across these sessions, speakers framed the current landscape as technically promising but fragmented, with recurring needs around trust, interoperability, usability, and accessibility.</p>
+            
+            <blockquote>
+                <p>"Proprietary voice AI platforms can move quickly, but the result is fragmentation and lock-in. The key question is whether we can restore portability and interoperability without slowing innovation."</p>
+                <cite>— RJ Burnham, Session 1</cite>
+            </blockquote>
+            
+            <p>Session content covered foundational questions (governance, standards scope, and trust), implementation challenges (hallucination, real-time processing, multimodal cues), and practical deployment contexts (health, automotive, and web accessibility). Breakout discussions in each session were used to connect individual talks into actionable themes for standards work.</p>
+        </section>
+
+        <section id="topics">
+            <h2>Topics</h2>
+
+            <section id="interoperability">
+                <h3>Agent Interoperability</h3>
+                
+                <div class="see-also">
+                    <h4>See also:</h4>
+                    <ul>
+                        <li><a href="https://www.w3.org/2025/10/smartagents-workshop/agenda.html">Workshop agenda (Sessions 1-3)</a></li>
+                    </ul>
+                </div>
+                
+                <p>Interoperability was a core thread throughout Session 1. Emmett Coin ("Multi-Agent Conversational Methodology") presented work in the Open Floor Protocol (OFP) community on cross-agent collaboration between multiple agents and a human participant, with emphasis on coordinated turn-taking and shared conversational state.</p>
+                
+                <p>RJ Burnham ("Reimagining Standards for Voice AI") argued that current closed ecosystems create portability and integration friction, and proposed revisiting standards strategy for modern LLM-driven voice systems. Patricia Lee ("Governance and Greenlights") added a process and governance lens, focusing on how trust and compliance requirements must be built into interoperability planning from the start.</p>
+                
+                <p>Breakout discussions reinforced the need for interoperable interfaces that preserve innovation while reducing lock-in, especially for multi-agent orchestration and cross-vendor integration.</p>
+            </section>
+
+            <section id="protocols">
+                <h3>Communication Protocols and Standards</h3>
+                
+                <section id="setting-context">
+                    <h2>Setting the Context</h2>
+            
+                    <div class="see-also">
+                        <h4>See also:</h4>
+                        <ul>
+                            <li><a href="https://www.w3.org/2025/10/smartagents-workshop/agenda.html">Agenda and presentations</a></li>
+                            <li><a href="https://www.w3.org/2025/10/smartagents-workshop/index.html">Workshop overview and participation info</a></li>
+                        </ul>
+                    </div>
+            
+                    <p>The workshop was organized as three half-day sessions: Session 1 (25 Feb, 12:00 GMT-5), Session 2 (26 Feb, 10:00 GMT+1), and Session 3 (27 Feb, 12:00 GMT-5). Across these sessions, speakers framed the current landscape as technically promising but fragmented, with recurring needs around trust, interoperability, usability, and accessibility.</p>
+            
+                    <blockquote>
+                        <p>"Proprietary voice AI platforms can move quickly, but the result is fragmentation and lock-in. The key question is whether we can restore portability and interoperability without slowing innovation."</p>
+                        <cite>— RJ Burnham, Session 1</cite>
+                    </blockquote>
+            
+                    <p>Session content covered foundational questions (governance, standards scope, and trust), implementation challenges (hallucination, real-time processing, multimodal cues), and practical deployment contexts (health, automotive, and web accessibility). Breakout discussions in each session were used to connect individual talks into actionable themes for standards work.</p>
+                </section>
+                    <h4>See also:</h4>
+                    <ul>
+                        <li><a href="https://www.w3.org/2025/10/smartagents-workshop/agenda.html">Workshop agenda (Sessions 1-3)</a></li>
+                    </ul>
+                </div>
+                
+                <p>Security and privacy were addressed from governance and deployment angles. Patricia Lee highlighted cyber-resilient and compliant trust models as prerequisites for broad adoption. Ulrike Stiefelhagen discussed difficult scenarios in industry and health, noting that hallucination and reliability risks are amplified in voice-first experiences where users may infer higher confidence than warranted.</p>
+
+                <p>Session discussions also surfaced practical needs for secure defaults, transparent data handling, and clearer boundaries for what agents can do on behalf of users in sensitive domains.</p>
+            </section>
+
+            <section id="user-control">
+                <h3>User Control and Transparency</h3>
+                <p>Several talks converged on user agency as a design requirement. Kristiina Jokinen ("Towards Smarter Voice Interfaces: Using Grounding and Knowledge") emphasized accountable reasoning grounded in shared context, while Raj Tumuluri ("Trust & Empathy with Multimodal Assistants") focused on explainable behavior during ambiguity and error states.</p>
+
+                <p>Casey Kennington's talk on real-time processing framed responsiveness as part of transparency: users better understand and trust systems that react incrementally and predictably rather than in opaque turn-by-turn blocks.</p>
+            </section>
+
+            <section id="multi-agent">
+                <h3>Multi-Agent Conversations</h3>
+                <p>Multi-agent collaboration was directly addressed by Emmett Coin's OFP presentation, which demonstrated coordinated participation among multiple agents and a human in one conversation. The workshop treated delegation and handoff not only as routing problems but as interaction design problems involving turn ownership, context transfer, and participant awareness.</p>
+
+                <p>Complementary inputs from Fares Abawi ("Gaze-Aware Dialog Systems") suggested that multimodal signals can improve turn-taking and intent resolution in multi-party interactions, especially when voice alone is ambiguous.</p>
+            </section>
+
+            <section id="accessibility">
+                <h3>Accessibility and Inclusivity</h3>
+                
+                <div class="see-also">
+                    <h4>See also:</h4>
+                    <ul>
+                        <li><a href="https://www.w3.org/2025/10/smartagents-workshop/agenda.html">Workshop agenda (Sessions 1-3)</a></li>
+                    </ul>
+                </div>
+                
+                <p>Accessibility was one of the strongest themes across sessions. Sarah Wood ("Solving Lead vs. Lead") discussed pronunciation consistency and argued for standardized speech markup support in web content to improve assistive and agent outcomes. Zohar Gan presented voice accessibility for 3D and immersive content using semantic metadata, with concrete proposals for standardizing metadata representation and integration.</p>
+
+                <p>Bryan Vuong ("Beyond Screen Readers") described embeddable voice agents for blind and low-vision users, identifying web platform gaps that currently limit seamless integration. Together, these talks emphasized that inclusive voice interaction depends on both semantic content standards and platform-level integration points.</p>
+            </section>
+
+            <section id="voice-biometrics">
+                <h3>Voice Biometrics and Authentication</h3>
+                <p>While no dedicated biometrics talk was scheduled, identity, trust, and authorization concerns appeared repeatedly in adjacent discussions. Patricia Lee's trust-and-compliance framing and healthcare/industry scenarios discussed by Ulrike Stiefelhagen highlighted the need for stronger authentication and verification models in high-stakes voice workflows.</p>
+
+                <p>A recurring takeaway was to scope future standards work around privacy-preserving identity assertions, explicit consent and delegation boundaries, and auditable decision trails for agent actions taken on behalf of users.</p>
+            </section>
+        </section>
+
+        <section id="issues-identified">
+            <h2>Issues Identified</h2>
+            <p>The following issues were repeatedly raised in plenary and breakout minutes and remain open for follow-up in Community Groups, breakouts, or formal standardization tracks.</p>
+
+            <section id="issues-top8">
+                <h3>Top 8 Cross-cutting Issues</h3>
+                <ul class="action-items">
+                    <li><strong>Pronunciation and language representation:</strong> unresolved standards for phonetic markup, dialect variation, proper names, abbreviations, and author control.</li>
+                    <li><strong>Reliability and hallucination control:</strong> missing shared benchmarks and evaluation methods for ASR and ASR+LLM error modes across multilingual and noisy settings.</li>
+                    <li><strong>Real-time interaction quality:</strong> open problems in incremental processing, response timing, interruption behavior, and low-latency turn-taking.</li>
+                    <li><strong>Interoperability scope and architecture:</strong> no clear consensus yet on where to standardize first (protocol, API, dialog model, or integration profile).</li>
+                    <li><strong>Privacy, trust, and delegation boundaries:</strong> unresolved requirements for consent, identity assertions, redaction, verification, and auditable agent actions.</li>
+                    <li><strong>Multimodal coordination and synchronization:</strong> open questions around gaze/speech fusion, speaker diarization, intent inference, and multi-stream time alignment.</li>
+                    <li><strong>Accessibility in immersive and web contexts:</strong> gaps in semantic metadata, timing annotations, and practical integration hooks for assistive voice interaction.</li>
+                    <li><strong>Cultural, emotional, and persona adaptation:</strong> lack of interoperable models and guardrails for culturally aware behavior, emotion signaling, and safe agent personas.</li>
+                </ul>
+            </section>
+
+            <section id="issues-day1">
+                <h3>25 February (Session 1)</h3>
+                <p>Sources: <a href="https://www.w3.org/2026/02/25-smartagents-main-minutes.html">Session 1 minutes</a> and <a href="https://www.w3.org/2026/02/25-smartagents-4-minutes.html">Multi-Agent Conversational Methodology breakout minutes</a>.</p>
+                <ul class="action-items">
+                    <li><strong>Pronunciation and localization are unresolved:</strong> no one-size-fits-all approach across languages, dialects, proper names, and abbreviations; author control and shared representation mechanisms need further definition.</li>
+                    <li><strong>ASR hallucination handling lacks common metrics:</strong> participants asked for formal benchmarking and clearer definitions, with unresolved challenges for multilingual cases and real-time chunk-based processing.</li>
+                    <li><strong>Multi-agent standardization scope is still unclear:</strong> open questions remain on whether to prioritize protocol, API, or dialog-management layers, and how to align with related external efforts.</li>
+                    <li><strong>Cross-cultural and multilingual coordination is underspecified:</strong> breakout discussion raised unresolved needs for language mediation, culturally aware interaction styles, and shared dialog-management models for multi-agent plus human conversation.</li>
+                    <li><strong>Agent persona and intent signaling need guardrails:</strong> participants raised trust concerns about inconsistent or potentially malicious agent behavior and the lack of standard ways to describe agent purpose and attitude.</li>
+                    <li><strong>Privacy and trust boundaries need refinement:</strong> unresolved concerns include user-agent vs. agent-agent data protection, redaction, verification, and compliance in delegated workflows.</li>
+                    <li><strong>Interoperability consensus is incomplete:</strong> participants noted persistent complexity around input/output/context exchange and highlighted the need for champions and exploratory work before convergence.</li>
+                </ul>
+            </section>
+
+            <section id="issues-day2">
+                <h3>26 February (Session 2)</h3>
+                <p>Sources: <a href="https://www.w3.org/2026/02/26-smartagents-main-minutes.html">Session 2 minutes</a> and <a href="https://www.w3.org/2026/02/26-smartagents-2-minutes.html">Breakout 2 minutes (Accessibility of 3D and Immersive Content via Voice Interaction)</a>.</p>
+                <ul class="action-items">
+                    <li><strong>Accessibility for immersive environments needs standard hooks:</strong> discussion highlighted missing shared approaches for semantic metadata and integration of voice access in 3D and digital-twin contexts.</li>
+                    <li><strong>Real-time timing control remains difficult:</strong> stricter timing and interruption behavior for natural dialog, especially in industrial use cases, remains an open technical and standards problem.</li>
+                    <li><strong>Grounding formalization is not yet mature:</strong> participants called for more computable and reusable grounding structures so systems can exchange and apply contextual knowledge consistently.</li>
+                    <li><strong>Configurable responsive UX lacks clear standards:</strong> unresolved questions include speech end-point detection, interaction pacing, and adaptation to changing model/user variables.</li>
+                    <li><strong>Latency, privacy, and deployment architecture trade-offs are unresolved:</strong> breakout participants identified open design choices around cloud vs. local AI and hybrid execution for disability-focused response-time requirements.</li>
+                    <li><strong>Interaction timing metadata is not standardized:</strong> participants discussed dynamic timing and annotation needs for special audio behavior, but no shared format or integration profile was identified.</li>
+                    <li><strong>Gaze + multimodal fusion raises open questions:</strong> issues include how to infer intent reliably, measure usefulness, synchronize multiple data streams, and avoid fragile calibration assumptions.</li>
+                </ul>
+            </section>
+
+            <section id="issues-day3">
+                <h3>27 February (Session 3)</h3>
+                <p>Sources: <a href="https://www.w3.org/2026/02/27-smartagents-main-minutes.html">Session 3 main minutes</a> and <a href="https://www.w3.org/2026/02/27-smartagents-1-minutes.html">Breakout minutes</a>.</p>
+                <ul class="action-items">
+                    <li><strong>Real-time processing for voice agents:</strong> Demonstrations and discussion on incremental, word-by-word speech processing, turn-taking, timing models, and the importance of modular, incremental dialogue processing (Casey Kennington, retico-team).</li>
+                    <li><strong>In-vehicle voice interaction:</strong> Challenges and research on voice agents in automotive environments, safety trade-offs, multimodal feedback, the evolution from physical controls to voice, and the need for on-board vs. off-board processing (Frankie James).</li>
+                    <li><strong>Trust & empathy in multimodal assistants:</strong> Engineering empathy, reliability models, "sentient" digital twins, and the importance of human-centric design for more natural interaction (Raj Tumuluri).</li>
+                    <li><strong>Web accessibility and embeddable voice agents:</strong> Standardizing voice agents for universal web accessibility, with a focus on blind and low-vision users, fast conversational interfaces, and DOM-based optimization (Bryan Vuong).</li>
+                    <li><strong>Breakout discussions:</strong> Explored incremental error handling, multimodal fusion, teachable moments in vehicles, privacy and voice fakes, on-board vs. off-board processing, collaborative approaches to agent interaction, and the need for robust speaker diarization and emotion/cultural adaptation models.</li>
+                    <li><strong>Standards and next steps:</strong> Emphasis on the need for W3C standardization in areas such as LLM APIs, multimodal fusion, timing, privacy, and streaming architectures. Noted the relevance of Community Groups and upcoming W3C events (Breakouts Day, TPAC 2026, possible journal special issue).</li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="next-steps">
+            <h2>Next Steps</h2>
+            
+            <div class="see-also">
+                <h4>See also:</h4>
+                <ul>
+                    <li><a href="https://www.w3.org/2025/10/smartagents-workshop/agenda.html">Workshop agenda</a></li>
+                    <li><a href="https://www.w3.org/2025/10/smartagents-workshop/index.html">Call for Participation and workshop context</a></li>
+                </ul>
+            </div>
+            
+            <p>The conversation does not end with the workshop. We encourage continued collaboration through Community Groups, upcoming W3C events, and publication opportunities that can carry these discussions into concrete standards and implementation work.</p>
+
+            <section id="feedback">
+                <h3>We Value Your Feedback</h3>
+                <p>We are committed to learning from this experience. Whether you have positive highlights or constructive criticism regarding how the workshop was perceived or organized, please share your feedback.</p>
+                <ul class="action-items">
+                    <li>Email your thoughts to: <a href="mailto:group-voiceagents-ws-pc@w3.org">group-voiceagents-ws-pc@w3.org</a></li>
+                </ul>
+            </section>
+
+            <section id="recordings-materials">
+                <h3>Recordings &amp; Materials</h3>
+                <p>For those who wish to revisit a session or catch up on what they missed, recordings will be available on the official workshop page. A follow-up notification will be shared as soon as they are live.</p>
+            </section>
+
+            <section id="what-to-watch">
+                <h3>What to Watch (Technologies)</h3>
+                <p>Based on workshop talks and breakout discussions, the following technology areas are likely to shape near-term progress for smart voice agents on the Web:</p>
+
+                <ul class="action-items">
+                    <li><strong>Multi-agent interoperability protocols:</strong> watch for practical protocol definitions and reference implementations that support handoff, shared context, and cross-vendor coordination.</li>
+                    <li><strong>Real-time incremental voice processing:</strong> watch for approaches that reduce turn latency and enable more natural, continuous interaction patterns.</li>
+                    <li><strong>Grounding and accountable reasoning:</strong> watch for methods that anchor responses in shared context and verifiable knowledge, especially in high-stakes domains.</li>
+                    <li><strong>Hallucination detection and mitigation:</strong> watch for evaluation frameworks and safeguards specific to ASR + LLM voice pipelines.</li>
+                    <li><strong>Multimodal interaction signals:</strong> watch integration of gaze and other non-verbal cues to improve turn-taking, intent resolution, and conversational robustness.</li>
+                    <li><strong>Accessibility-oriented semantics:</strong> watch progress on pronunciation markup, semantic 3D metadata, and embeddable voice interfaces for non-visual access.</li>
+                    <li><strong>Trust, consent, and governance models:</strong> watch for patterns that define clear user delegation boundaries, auditable agent actions, and privacy-preserving identity assertions.</li>
+                </ul>
+            </section>
+
+            <section id="relevant-wg-ig">
+                <h3>Relevant W3C Working Groups and Interest Groups</h3>
+                <ul class="action-items">
+                    <li><strong><a href="https://www.w3.org/WAI/">Web Accessibility Initiative (WAI)</a>:</strong> Standards and best practices for accessible web technologies, including voice interfaces.</li>
+                    <li><strong><a href="https://www.w3.org/groups/wg/webplatform">Web Platform Working Group</a>:</strong> Responsible for core web standards that may impact agent integration.</li>
+                    <li><strong><a href="https://www.w3.org/groups/ig/privacy">Privacy Interest Group (PING)</a>:</strong> Focuses on privacy issues and best practices for web technologies, including those affecting voice agents and user data.</li>
+                    <li><strong><a href="https://www.w3.org/groups/wg/webapps">Web Applications Working Group</a>:</strong> Develops APIs and technologies for web applications, relevant for agent interoperability.</li>
+                    <li><strong><a href="https://www.w3.org/groups/wg/web-audio">Web Audio Working Group</a>:</strong> Develops standards for audio processing and synthesis on the web, essential for voice agent technologies.</li>
+                    <li><strong><a href="https://www.w3.org/groups/wg/wot">Web of Things (WoT) Working Group</a>:</strong> Develops standards for integrating physical devices and sensors with the web, relevant for voice agents interacting with smart environments.</li>
+                    <li><strong><a href="https://www.w3.org/groups/ig/smartcities">Smart Cities Interest Group</a>:</strong> Focuses on web standards and best practices for smart city applications, including interoperability and integration of IoT and voice technologies in urban environments.</li>
+                </ul>
+            </section>
+            <section id="technologies-progress">
+                <h3>Relevant W3C Community Groups</h3>
+                <p>As highlighted in the workshop follow-up, the following W3C Community Groups are particularly relevant for continuing Smart Voice Agents work before formal standardization.</p>
+                
+                <ul class="action-items">
+                    <li><strong><a href="https://www.w3.org/groups/cg/voiceinteraction/">Voice Interaction CG</a>:</strong> focusing on the interface between users and voice-based applications.</li>
+                    <li><strong><a href="https://www.w3.org/groups/cg/webagents/">Autonomous Agents on the Web CG</a>:</strong> exploring how agents navigate and act upon web content.</li>
+                    <li><strong><a href="https://www.w3.org/groups/cg/agentprotocol/">AI Agent Protocol CG</a>:</strong> defining how agents communicate with one another.</li>
+                    <li><strong><a href="https://www.w3.org/groups/cg/semantic-3d-a11y/">Semantic 3D Content Accessibility CG</a>:</strong> bridging voice and spatial computing.</li>
+                    <li><strong><a href="https://www.w3.org/community/groups/propose_cg/">Start a new CG</a>:</strong> participants with a new idea are encouraged to initiate new incubation efforts.</li>
+                </ul>
+            </section>
+
+            <section id="exploratory-work">
+                <h3>W3C Breakouts Day 2026</h3>
+                <p>Breakouts Day is an annual virtual unconference where the global web community proposes and explores focused problems. Although the deadline for proposals has passed, participants can still join discussions and contribute to ongoing projects.</p>
+                
+                <ul class="action-items">
+                    <li>Date: 25-26March 2026.</li>
+                    <li>Event information: <a href="https://www.w3.org/events/">W3C Events</a>.</li>
+                </ul>
+            </section>
+
+            <section id="new-proposals">
+                <h3>TPAC 2026</h3>
+                <p>TPAC is W3C's premier annual event where Working Groups and Community Groups coordinate and solve cross-cutting web platform challenges.</p>
+                
+                <ul class="action-items">
+                    <li>When: 26 October – 30 October 2026.</li>
+                    <li>Details: <a href="https://www.w3.org/events/tpac/2026/tpac-2026/">TPAC 2026</a>.</li>
+                </ul>
+            </section>
+
+            <section id="other-proposals">
+                <h3>Journal Publication</h3>
+                <p>The organizers are exploring a Special Issue of an academic journal based on workshop themes. A formal Call for Papers is expected, and workshop speakers will receive a dedicated invitation when details are finalized.</p>
+                
+                <ul class="action-items">
+                    <li>Proposed theme focus: interoperable, real-time, multimodal, and inclusive smart voice agents.</li>
+                    <li>Status: planning in progress; formal announcement to follow.</li>
+                </ul>
+            </section>
+        </section>
+
+        <section id="thank-you">
+            <h2>Thank You!</h2>
+            <p>Thank you for your interest in the W3C Workshop on Smart Voice Agents. Over three half-day sessions, the workshop explored a rapidly evolving landscape and benefited from strong engagement across talks, plenary exchanges, and breakout discussions.</p>
+
+            <p>From Foundations and Interoperability on Day 1, to Smarter and More Inclusive Interactions on Day 2, and Real-time, Contextual, and Applied Voice Agents on Day 3, the breadth of insights shared was remarkable.</p>
+
+            <p>On behalf of the organizing committee, thanks to the speakers for contributing their expertise and to all attendees for thoughtfull and energetic discussions. We look forward to building a smarter, more interoperable voice ecosystem.</p>
+            
+            <p>W3C is proud to be an open and inclusive organization, focused on productive discussions and actions. Our <a href="https://www.w3.org/policies/code-of-conduct/">Code of Conduct</a> ensures that all voices can be heard.</p>
+            
+            <p>Questions? Contact Philippe Le Hégaret &lt;<a href="mailto:plh@w3.org">plh@w3.org</a>&gt;.</p>
+            
+            <p>Suggestions for improving this workshop page, such as fixing typos or adding specific topics, can be made by opening a <a href="https://github.com/w3c/smartagents-workshop">pull request on GitHub</a>, or by emailing Philippe Le Hégaret &lt;<a href="mailto:plh@w3.org">plh@w3.org</a>&gt;.</p>
+        </section>
+    </main>
+
+    <div class="additional-links">
+        <h2>Additional Links</h2>
+        <ul>
+            <li><a href="https://www.w3.org/2025/10/smartagents-workshop/index.html">Call for Participation</a></li>
+            <li><a href="https://www.w3.org/2025/10/smartagents-workshop/speakers.html">Apply as a speaker</a></li>
+            <li><a href="https://www.w3.org/2025/10/smartagents-workshop/agenda.html">Agenda</a></li>
+            <li><a href="https://www.w3.org/2025/10/smartagents-workshop/">Workshop home</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p><a href="https://www.w3.org/"><img src="https://www.w3.org/Icons/w3c_home" alt="W3C" width="72" height="48"></a></p>
+        <p>Copyright © 2026 <a href="https://www.w3.org/">World Wide Web Consortium</a>. W3C® <a href="https://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="https://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="https://www.w3.org/Consortium/Legal/2015/copyright-software-and-document">permissive document license</a> rules apply.</p>
+    </footer>
+</body>
+</html>
